@@ -18,3 +18,4 @@ Then you'll open /ThreeJs/threeJsTest.html in your browser and you'll see 3D cub
 
 P.S 
 (temporary) /NodeJs/nodeFileUploader.js - test js script with file uploader functionality.
+/form.html - simple html form that can upload files, using nodeFileUploader script.
