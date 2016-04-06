@@ -14,3 +14,7 @@ threejs test scripts.
     
 
 Then you'll open /ThreeJs/threeJsTest.html in your browser and you'll see 3D cube from mesh.stl.
+
+
+P.S 
+(temporary) /NodeJs/nodeFileUploader.js - test js script with file uploader functionality.
