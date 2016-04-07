@@ -9,7 +9,15 @@ init();
 animate();
 
 function init() {
-
+  var stlFileName = ""
+  var paramDict = getUrlVars(window.location.href);
+  if (! ("stl" in paramDict)) {
+    alert("no mandatory [stl] url param");
+  }
+  else {
+    stlFileName = paramDict["stl"];
+    alert("Load " + stlFileName + " model");
+  }
   container = document.createElement( 'div' );
   document.body.appendChild( container );
 
@@ -35,8 +43,9 @@ function init() {
   plane.receiveShadow = true;
 
   var loader = new THREE.STLLoader();
+  THREE.Cache.clear();
 
-  loader.load( tmpHost + 'mesh.stl', function ( geometry ) {
+  loader.load( tmpHost + stlFileName, function ( geometry ) {
 
 
     var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
