@@ -160,12 +160,6 @@ http.createServer(function(request, response) {
       else { 
         urlObj = urlParser.parse(request.url, true);
         var urlPath = urlObj["pathname"];
-        /*
-        if ("query" in urlObj && "as" in urlObj["query"]) {
-	  console.log(urlObj["query"]["as"]);
-          console.log(urlObj["pathname"]);
-        }
-        */ 
         var cType = cTypeByExtResolver(urlPath);
         console.log(cType);
         if (cType == "stl") {
