@@ -8,6 +8,15 @@ var camera, cameraTarget, scene, renderer;
 init();
 animate();
 
+function getFormAction(form) {
+  var action = tmpHost;
+  var paramDict = getUrlVars(window.location.href);
+  if ("stl" in paramDict) {
+    action += paramDict["stl"];
+  }
+  form.action = action;
+}
+
 function init() {
   var stlFileName = ""
   var paramDict = getUrlVars(window.location.href);
