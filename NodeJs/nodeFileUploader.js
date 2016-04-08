@@ -110,7 +110,7 @@ function uploadHandler(request, response) {
 
 
     form.on("close", function () {
-      var redirectLocation = "http://127.0.0.1:8124/stl_loader_own.html";
+      var redirectLocation = "http://127.0.0.1:8124/threeJsTest.html";
       if (lastFormFileName != "") {
         redirectLocation += "?stl=" + lastFormFileName;
       }
