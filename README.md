@@ -15,8 +15,10 @@ threejs test scripts.
  4) Test stl source file (mesh.stl) must be loacated on Node.js host machine 
     by path: (c:\tmp\stls\mesh.stl)
     
-
-Then you'll open /ThreeJs/threeJsTest.html in your browser and you'll see 3D cube from mesh.stl.
+Then you can:
+-Open http://127.0.0.1:8124/threeJsTest.html?stl=mesh.stl in your browser and you'll see 3D cube from mesh.stl.
+OR
+-Open upload form by : http://127.0.0.1:8124/.
 
 
 P.S 
