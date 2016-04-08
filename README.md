@@ -7,7 +7,7 @@ threejs test scripts.
     So all items from GIT:ThreeJs/ dir (+ThreeJs lib as c:\tmp\threeJs) must be located in c:\tmp.
  
  2) ThreeJs lib (https://github.com/mrdoob/three.js/archive/master.zip) 
-    must be delopyed in scrip's (c:\tmp\threeJs\threeJsTest.html) directory.
+    must be delopyed in script's (c:\tmp\threeJs\threeJsTest.html) directory.
     
  3) NodeJs must be started with /NodeJs/nodeFileUploader.js script.
  3.1) 127.0.0.1:8124 port must be available.
