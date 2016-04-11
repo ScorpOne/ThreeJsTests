@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>forma</title>
+	  <title>forma</title>
+	  <script src="script/relocation_scripts.js"></script>
 	</head>
 	<body>
-          <form method="post" enctype="multipart/form-data" action="http://127.0.0.1:8124/upload">
-            STL file name: <input id="stl_input" type="file" name=""><br>
-            <input type="submit" value="Submit">
+          <form method="post" enctype="multipart/form-data" action="http://127.0.0.1:8124/upload"
+	        name="form1" onsubmit="addTokenToAction(this);">
+            STL file name: <input type="file" name="arra"><br>
+            <input type="submit" value="Submit" name="submit">
           </form> 
 	</body>
 </html>
