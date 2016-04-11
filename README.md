@@ -26,3 +26,8 @@ P.S
 /form.html - simple html form that can upload files, using nodeFileUploader script.
 
 Added stl samples in stlSamples dir.
+
+11.04.2016 Updated.
+ Updated with simple token registration.
+ Now work with script starts by http://127.0.0.1:8124/index.html page. http://127.0.0.1:8124/ page will redirect to the 
+ registration.html page.
