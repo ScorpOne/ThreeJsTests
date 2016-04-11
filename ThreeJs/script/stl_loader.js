@@ -1,3 +1,6 @@
+// main 3D scene script with .stl loader
+// script has used threJs library
+
 var tmpHost = 'http://127.0.0.1:8124/'
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
@@ -5,17 +8,10 @@ var container, stats;
 
 var camera, cameraTarget, scene, renderer;
 
+
 init();
 animate();
 
-function getFormAction(form) {
-  var action = tmpHost;
-  var paramDict = getUrlVars(window.location.href);
-  if ("stl" in paramDict) {
-    action += paramDict["stl"];
-  }
-  form.action = action;
-}
 
 function init() {
   var stlFileName = ""
@@ -25,8 +21,10 @@ function init() {
   }
   else {
     stlFileName = paramDict["stl"];
-    alert("Load " + stlFileName + " model");
   }
+  stlFileName = reloadWithToken(stlFileName, false);
+  alert("Load " + stlFileName + " model");
+
   container = document.createElement( 'div' );
   document.body.appendChild( container );
 
