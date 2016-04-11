@@ -10,21 +10,21 @@
 		<div id="info">
 			<a href="http://threejs.org" target="_blank">three.js</a> -
 			STL loader test by <a href="https://github.com/aleeper">aleeper</a>. PR2 head from <a href="http://www.ros.org/wiki/pr2_description">www.ros.org</a>
+			<br>
+			save button
+                        <input type="button" value="Save" onclick="stlDownload();">
+                         
 		</div>
-		<br>
-		save button
-                <form action="" onsubmit="getFormAction(this);">
-                        <input type="submit" value="Submit">
-                </form> 
+                 
+		<script src="threeJs/build/three.js"></script>
 
+		<script src="threeJs/examples/js/loaders/STLLoader.js"></script>
 
-		<script src="build/three.js"></script>
+		<script src="threeJs/examples/js/Detector.js"></script>
+		<script src="threeJs/examples/js/libs/stats.min.js"></script>
 
-		<script src="examples/js/loaders/STLLoader.js"></script>
-
-		<script src="examples/js/Detector.js"></script>
-		<script src="examples/js/libs/stats.min.js"></script>
-
+		<script src="script/relocation_scripts.js"></script>
+		<script src="script/url_param_parse.js"></script>
 		<script src="script/stl_loader.js"></script>
 
 	</body>
