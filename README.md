@@ -31,3 +31,9 @@ Added stl samples in stlSamples dir.
  Updated with simple token registration.
  Now work with script starts by http://127.0.0.1:8124/index.html page. http://127.0.0.1:8124/ page will redirect to the 
  registration.html page.
+
+12.04.2016 Updated.
+ Added next script file into the nodeJs scripts:
+ ./nodeCimmonFunc.js - will contain common user functions.
+ ./nodeTokenCalc.js - simple method for token generating/calculating.
+ ./nodeRedisClient.js - node js server script which services set/get requests to the Redis storage.
